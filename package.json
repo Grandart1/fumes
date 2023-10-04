@@ -1,0 +1,22 @@
+{
+  "name": "fumes",
+  "version": "1.0.0",
+  "description": "A game store",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/joaokanta/fumes-ui.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/joaokanta/fumes-ui/issues"
+  },
+  "homepage": "https://github.com/joaokanta/fumes-ui#readme",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
