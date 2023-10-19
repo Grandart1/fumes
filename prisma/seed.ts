@@ -20,6 +20,24 @@ async function seed() {
       },
     },
   });
+
+  await prisma.game.create({
+    data: {
+      title: "Dungeon Defenders",
+      achievements: {
+        createMany: {
+          data: [
+            {
+              title: "Good Student",
+            },
+            {
+              title: "Smithy",
+            },
+          ],
+        },
+      },
+    },
+  });
 }
 
 seed()
