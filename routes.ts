@@ -1,6 +1,6 @@
 import express from "express";
-import {GameController} from "./controller/game.ts";
-import {AchievementController} from "./controller/achievement.ts";
+import {GameController} from "./src/controller/game.ts";
+import {AchievementController} from "./src/controller/achievement.ts";
 const router = express.Router();
 
 const gameController: GameController = GameController.getInstance()
