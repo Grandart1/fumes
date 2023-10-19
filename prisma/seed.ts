@@ -38,6 +38,23 @@ async function seed() {
       },
     },
   });
+  await prisma.game.create({
+    data: {
+      title: "Tales of Maj'eyal",
+      achievements: {
+        createMany: {
+          data: [
+            {
+              title: "RICH",
+            },
+            {
+              title: "REACH LEVEL 10",
+            },
+          ],
+        },
+      },
+    },
+  });
 }
 
 seed()
