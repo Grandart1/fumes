@@ -1,6 +1,7 @@
-postgres:
-  image: postgres
-  environment:
-    POSTGRES_PASSWORD: "password"
-  ports:
-    - "5432:5432"
+services:
+  postgres:
+    image: postgres
+    environment:
+      POSTGRES_PASSWORD: "password"
+    ports:
+      - "5432:5432"
