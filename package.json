@@ -5,7 +5,10 @@
   "main": "index.js",
   "scripts": {
     "format": "prettier -w **/**.ts",
-    "start": "nodemon app.ts"
+    "start": "nodemon app.ts",
+    "start-database": "echo 'Remember to have docker running' && docker-compose --file database/docker-compose.yaml up -d",
+    "prisma-reset": "npx prisma migrate reset",
+    "prisma-apply-changes": "npx prisma migrate dev"
   },
   "repository": {
     "type": "git",
