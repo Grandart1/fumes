@@ -1,10 +1,11 @@
 import express from "express";
-import {GameController} from "./src/controller/game.ts";
-import {AchievementController} from "./src/controller/achievement.ts";
+import { GameController } from "./src/controller/game.ts";
+import { AchievementController } from "./src/controller/achievement.ts";
 const router = express.Router();
 
-const gameController: GameController = GameController.getInstance()
-const achievementController: AchievementController = AchievementController.getInstance()
+const gameController: GameController = GameController.getInstance();
+const achievementController: AchievementController =
+  AchievementController.getInstance();
 
 // When we pass getGames to the router.get function we are passing it as a callback function.
 // Callback functions are functions that will be called by other functions.
