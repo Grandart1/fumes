@@ -38,6 +38,7 @@ async function seed() {
       },
     },
   });
+
   await prisma.game.create({
     data: {
       title: "Tales of Maj'eyal",
