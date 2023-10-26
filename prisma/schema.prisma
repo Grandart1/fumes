@@ -16,11 +16,13 @@ model Game {
   createdAt    DateTime      @default(now())
   updatedAt    DateTime      @updatedAt
   achievements Achievement[]
+  description  String? @db.VarChar(255)
 }
 
 model Achievement {
-  id     Int    @id @default(autoincrement())
-  title  String @db.VarChar(255)
-  game   Game   @relation(fields: [gameId], references: [id])
-  gameId Int
+  id          Int    @id @default(autoincrement())
+  title       String @db.VarChar(255)
+  game        Game   @relation(fields: [gameId], references: [id])
+  gameId      Int
+  description String? @db.VarChar(255)
 }
