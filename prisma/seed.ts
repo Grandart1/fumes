@@ -61,7 +61,7 @@ async function seed() {
     data: [
       {name: "Joao"},
       {name: "Mateus"}
-    ]
+    ],
   })
 }
 
