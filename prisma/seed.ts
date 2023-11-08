@@ -56,7 +56,16 @@ async function seed() {
       },
     },
   });
+
+  await prisma.user.createMany({
+    data: [
+      {name: "Joao"},
+      {name: "Mateus"}
+    ]
+  })
 }
+
+
 
 seed()
   .then(async () => {
